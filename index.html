@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    </head>
+    <body>
+        <form>
+            <div class="container">
+                <h1>Registration Form</h1>
+                <h3>Please fill up the form to create account</h3>
+                <hr>
+                <label for="Name">Name</label>
+                <input type="text" placeholder="Enter your name" id="Name" required>
+                <label for="Email">Email</label>
+                <input onblur="Email()" type="email" placeholder="Enter your Email ID" id="Email" required>
+                <label for="Password">Password</label>
+                <div class="container">
+                    <main>
+                        <input onblur="Wrong()" type="password" name="password" id="password" placeholder="Enter your password" required/>
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    </main>
+                </div>
+                <label id="wrong-password">Your password must contain atleast an uppercase and lowercase letter, a symbol, a number and should be atleast 8 characters long</label>
+                <hr>
+                <label >By creating an account, you agree to our <a href="">Terms and Conditions</a></label>
+                <br>
+                <button type="button" id="register" class="btn" onclick="Register()">Register</button>
+                <label id="result">Registration Success</label>
+            </div>
+        </form>
+        <script src="app.js" async defer></script>
+    </body>
+</html>

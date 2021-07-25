@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 600px!important;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(5, 1, 82) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 15px 15px;
+    margin: 10px auto;
+    color: white;
+    font-size: 20px;
+}
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px 10px 0px;
+    color: black;
+}
+label {
+    width: 100%;
+}
+input:focus {
+    background-color: lightgrey;
+}
+button {
+    color: white!important;
+    width: 100%;
+    margin: 10px;
+    padding: 10px 10px;
+    background: rgb(25,0,36);
+    background: linear-gradient(90deg, rgb(80, 5, 112) 0%, rgba(121,9,100,1) 35%, rgba(255,0,147,1) 100%);
+}
+a {
+    color: grey!important;
+}
+#wrong-password {
+    display: none;
+    color: red;
+}
+#result {
+    display: none;
+    color: green;
+}
+.container i {
+    margin-left: -30px;
+    cursor: pointer;
+    color: grey!important;
+}
